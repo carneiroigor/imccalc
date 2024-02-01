@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="shortcut icon" href="public/favicon.png" type="image/x-png">
+  <title>Calculadora IMC</title>
+</head>
+<body>
+  <section class="container container-form">
+    <div class="form-calc-div">
+      <form class="form-calc" method="post">
+        <label for="weight-input">Peso:</label>
+        <input class="weight-input" id="weight-input" type="tetx" placeholder="Ex: 60">
+        <label for="height-input">Altura:</label>
+        <input class="height-input" id="height-input" type="text" placeholder="Ex: 1.65">
+        <button class="imc-calc" type="submit">Calcular</button>
+        <p>Saiba agora se está no seu peso ideal!</p>
+        <div class="result">
+
+        </div>
+        <table>
+          <thead>
+            <tr class="color-row">
+              <th>IMC</th>
+              <th>Classificação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Menos de 17</td>
+              <td>Muito abaixo do peso</td>
+            </tr>
+            <tr class="color-row">
+              <td>Entre 17 e 18,49</td>
+              <td>Abaixo do peso</td>
+            </tr>
+            <tr>
+              <td>Entre 18,5 e 24,99</td>
+              <td>Peso normal</td>
+            </tr>
+            <tr class="color-row">
+              <td>Entre 25 e 29,99</td>
+              <td>Acima do peso</td>
+            </tr>
+            <tr>
+              <td>Entre 30 e 34,99</td>
+              <td>Obesidade I</td>
+            </tr>
+            <tr class="color-row">
+              <td>Entre 35 e 39,99</td>
+              <td>Obesidade II (severa)<td>
+            </tr>
+            <tr>
+              <td>Acima de 40</td>
+              <td>Obesidade III (mórbida)</td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>
+  </section>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
