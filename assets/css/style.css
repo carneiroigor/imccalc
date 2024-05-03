@@ -88,6 +88,10 @@ p {
     margin-bottom: 24px;
 }
 
+table {
+    border-collapse: collapse;
+}
+
 th {
     text-align: left;
 
