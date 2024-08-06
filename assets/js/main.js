@@ -40,7 +40,7 @@ function getImcRange(imc) {
     
     if (imc >= 18.49) return level[2];
 
-    if (imc >= 34.99) return level[1];
+    if (imc >= 17) return level[1];
     
     if (imc < 17) return level[0];
 };
