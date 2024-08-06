@@ -127,3 +127,9 @@ td {
     color: #1a1a1a;
     border-radius: 4px;
 }
+/* Mobile Screen */
+@media screen and (max-width: 500px) {
+  input {
+    width: 100%;
+  }
+}
