@@ -8,8 +8,6 @@ form.addEventListener('submit', function (event) {
     const weight = Number(inputWeight.value);
     const height = Number(inputHeight.value);
 
-    console.log(weight, height);
-
     if (!weight) {
         setResult('Peso Inválido', false);
         return;
@@ -24,7 +22,7 @@ form.addEventListener('submit', function (event) {
 
     const ImcRange = getImcRange(imc);
 
-    const msg = `Seu IMC é ${imc} - ${ImcRange}.`;
+    const msg = `Seu IMC é de ${imc} - ${ImcRange}.`;
 
     setResult(msg, true);
 });
@@ -32,19 +30,19 @@ form.addEventListener('submit', function (event) {
 function getImcRange(imc) {
     const level = ['Muito abaixo do peso', 'Abaixo do peso', 'Peso normal', 'Acima do peso', 'Obesidade I', 'Obesidade II (severa)', 'Obesidade III (mórbida)']
 
-    if (imc >= 39.99) return level[6]
+    if (imc >= 39.99) return level[6];
     
-    if (imc >= 34.99) return level[5]
+    if (imc >= 34.99) return level[5];
     
-    if (imc >= 29.99) return level[4]
+    if (imc >= 29.99) return level[4];
     
-    if (imc >= 24.99) return level[3]
+    if (imc >= 24.99) return level[3];
     
-    if (imc >= 18.49) return level[2]
+    if (imc >= 18.49) return level[2];
 
-    if (imc >= 34.99) return level[1]
+    if (imc >= 34.99) return level[1];
     
-    if (imc < 17) return level[0]
+    if (imc < 17) return level[0];
 };
 
 function getIMC(weight, height) {
