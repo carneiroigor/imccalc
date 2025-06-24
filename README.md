@@ -1,5 +1,5 @@
 <h1 align="center" style="font-weight: bold;">
-    Calculadora IMC
+    - Calculadora IMC - 
 </h1>
 <p align="center">
 </p>
